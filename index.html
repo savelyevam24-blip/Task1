@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Игровой сайт Савельевой Марии</title>
+<style>
+  body { font-family: "Times New Roman", serif; margin: 10px; }
+  #menu a.active { background: red; }
+  table { border-collapse: collapse; background: url("img/bg.jpg") center/cover; }
+  th, td { border: 1px solid #000; padding: 10px; text-align: center; }
+  th { background: rgba(200,200,200,.7); }
+  figure { display: inline-block; margin: 10px; text-align: center; }
+  input, textarea { margin-left: 3px; }
+  h3 { margin-top: 24px; }
+</style>
+</head>
+<body>
+
+<h1>Меню</h1>
+<ul id="menu">
+  <li><a href="#home">Главная</a></li>
+  <li><a href="#about">О себе</a></li>
+  <li><a href="#genres">Жанры</a></li>
+  <li><a href="#tips">Советы</a></li>
+  <li><a href="#gallery">Галерея игр</a></li>
+  <li><a href="#table">Таблица</a></li>
+  <li><a href="#forms">Формы</a></li>
+  <li><a href="#dom">DOM_JS. Считываем информацию из DOM</a></li>
+  <li><a href="#translit">Изменяем кириллицу на латиницу по клику</a></li>
+  <li><a href="#task">Решение алгоритмической задачи</a></li>
+  <li><a href="#contacts">Контакты (закладка)</a></li>
+  <li><a href="https://www.hse.ru/" target="_blank">ВШЭ (внешний)</a></li>
+  <li><a href="https://github.com/vmarshirov/g06u28" target="_blank">Курс (внешний)</a></li>
+  <li><a href="https://www.hse.ru/" target="_blank"><img src="img/hse.png" alt="hse" height="16"></a></li>
+</ul>
+
+<!-- ГЛАВНАЯ -->
+<section class="page" id="home">
+  <h1>Игровой сайт Савельевой Марии</h1>
+  <p>Добро пожаловать! Здесь собраны жанры видеоигр, советы по выбору игр и немного обо мне.</p>
+  <p>Учебный проект по основам web-технологий.</p>
+</section>
+
+<!-- О СЕБЕ -->
+<section class="page" id="about" hidden>
+  <h2>О себе</h2>
+  <p>Меня зовут Савельева Мария. Студентка группы Б25ДЗ27. Обожаю играть и говорить о играх.</p>
+  <p><b>Мои любимые жанры</b></p>
+  <ul>
+    <li>RPG</li>
+    <li>Приключения</li>
+    <li>Стратегии</li>
+  </ul>
+  <p id="contacts"><b>Контакты</b><br>
+    Почта: <a href="mailto:mvsaveleva_2@edu.hse.ru">mvsaveleva_2@edu.hse.ru</a><br>
+    Группа: Б25ДЗ27<br>
+    Телефон: <a href="tel:+79999999999">+7 999 999 99 99</a>
+  </p>
+</section>
+
+<!-- ЖАНРЫ -->
+<section class="page" id="genres" hidden>
+  <h2>Жанры</h2>
+  <ul>
+    <li>Action (экшен)</li>
+    <li>RPG (ролевые игры)</li>
+    <li>JRPG (японские ролевые игры)</li>
+    <li>Стратегии</li>
+    <li>Симуляторы</li>
+    <li>Шутеры</li>
+    <li>Приключения и квесты</li>
+  </ul>
+  <p><b>Отличительные признаки JRPG</b></p>
+  <ul>
+    <li>Пошаговая или полупошаговая боевая система</li>
+    <li>Линейный, сильно срежиссированный сюжет</li>
+    <li>Заранее заданные герои с собственной историей</li>
+    <li>Аниме-эстетика и яркая музыка</li>
+  </ul>
+</section>
+
+<!-- СОВЕТЫ -->
+<section class="page" id="tips" hidden>
+  <h2 id="tips-top">Советы при выборе и покупке игры</h2>
+  <p><b>Содержание страницы:</b></p>
+  <ol>
+    <li><a href="#tips-1">Раздел 1. Советы по выбору и покупке</a></li>
+    <li><a href="#tips-2">Раздел 2. Значок Steam</a></li>
+  </ol>
+
+  <h3 id="tips-1">Раздел 1. Советы по выбору и покупке</h3>
+  <ul>
+    <li>Перед покупкой
+      <ul>
+        <li>Проверьте системные требования и сравните их со своим ПК или консолью.</li>
+        <li>Почитайте отзывы игроков, обращая внимание на свежие оценки.</li>
+        <li>Посмотрите геймплейные ролики, а не только трейлеры.</li>
+      </ul>
+    </li>
+    <li>При покупке
+      <ul>
+        <li>Сравните цены в разных магазинах.</li>
+        <li>Дождитесь сезонных распродаж и добавьте игру в список желаемого.</li>
+      </ul>
+    </li>
+    <li>После покупки: как вернуть игру в Steam
+      <ol>
+        <li>Убедитесь, что с момента покупки прошло не больше 14 дней.</li>
+        <li>Проверьте, что вы играли менее 2 часов.</li>
+        <li>Подайте заявку на возврат в разделе поддержки.</li>
+      </ol>
+    </li>
+  </ul>
+  <p><a href="#tips-top">↑ К началу</a> | <a href="#tips-2">К разделу 2 ↓</a></p>
+
+  <h3 id="tips-2">Раздел 2. Значок Steam</h3>
+  <p>
+    <a href="img/steam.png" onclick="window.open(this.href,'_blank','width=600,height=400'); return false;">
+      <img src="img/steam.png" alt="Значок Steam" width="100" height="67">
+    </a>
+    — Значок Steam (миниатюра → большое 600×400 в новом окне)
+  </p>
+  <p><a href="#tips-top">↑ К началу</a> | <a href="#tips-1">← К разделу 1</a></p>
+</section>
+
+<!-- ГАЛЕРЕЯ -->
+<section class="page" id="gallery" hidden>
+  <h2 id="gallery-top">Галерея игр</h2>
+  <p><b>Содержание страницы:</b></p>
+  <ol>
+    <li><a href="#gallery-1">Раздел 1. The Witcher 3</a></li>
+    <li><a href="#gallery-2">Раздел 2. Final Fantasy VII</a></li>
+    <li><a href="#gallery-3">Раздел 3. Counter-Strike 2</a></li>
+  </ol>
+
+  <h3 id="gallery-1">Раздел 1. The Witcher 3</h3>
+  <figure>
+    <img src="img/witcher3.jpg" alt="The Witcher 3" width="300" height="200">
+    <figcaption>The Witcher 3: Wild Hunt</figcaption>
+  </figure>
+  <p><a href="#gallery-top">↑ К началу</a> | <a href="#gallery-2">К разделу 2 ↓</a></p>
+
+  <h3 id="gallery-2">Раздел 2. Final Fantasy VII</h3>
+  <figure>
+    <img src="img/ff7.jpg" alt="Final Fantasy VII" width="300" height="200">
+    <figcaption>Final Fantasy VII Remake</figcaption>
+  </figure>
+  <p><a href="#gallery-top">↑ К началу</a> | <a href="#gallery-1">← К разделу 1</a> | <a href="#gallery-3">К разделу 3 ↓</a></p>
+
+  <h3 id="gallery-3">Раздел 3. Counter-Strike 2</h3>
+  <figure>
+    <img src="img/cs2.jpg" alt="Counter-Strike 2" width="300" height="200">
+    <figcaption>Counter-Strike 2</figcaption>
+  </figure>
+  <p><a href="#gallery-top">↑ К началу</a> | <a href="#gallery-2">← К разделу 2</a></p>
+</section>
+
+<!-- ТАБЛИЦА -->
+<section class="page" id="table" hidden>
+  <h2 id="table-top">Таблица игр</h2>
+  <p><b>Содержание страницы:</b></p>
+  <ol>
+    <li><a href="#table-1">Раздел 1. Таблица игр</a></li>
+    <li><a href="#table-2">Раздел 2. Примечания</a></li>
+  </ol>
+
+  <h3 id="table-1">Раздел 1. Таблица игр</h3>
+  <p>Таблица с фотографиями игр, жанрами (гиперссылки на раздел «Жанры») и странами разработки.</p>
+  <table>
+    <tr><th>Фото</th><th>Игра</th><th>Жанр</th><th>Страна разработки</th></tr>
+    <tr>
+      <td><img src="img/witcher3.jpg" alt="The Witcher 3" width="100" height="67"></td>
+      <td>The Witcher 3</td>
+      <td><a href="#genres">RPG</a></td>
+      <td>Польша</td>
+    </tr>
+    <tr>
+      <td><img src="img/ff7.jpg" alt="Final Fantasy VII" width="100" height="67"></td>
+      <td>Final Fantasy VII</td>
+      <td><a href="#genres">JRPG</a></td>
+      <td>Япония</td>
+    </tr>
+    <tr>
+      <td><img src="img/cs2.jpg" alt="Counter-Strike 2" width="100" height="67"></td>
+      <td>Counter-Strike 2</td>
+      <td><a href="#genres">Шутер</a></td>
+      <td>США</td>
+    </tr>
+  </table>
+  <p><a href="#table-top">↑ К началу</a> | <a href="#table-2">К разделу 2 ↓</a></p>
+
+  <h3 id="table-2">Раздел 2. Примечания</h3>
+  <ul>
+    <li>Страны разработки
+      <ul>
+        <li>Польша — студия CD Projekt RED</li>
+        <li>Япония — студия Square Enix</li>
+        <li>США — студия Valve</li>
+      </ul>
+    </li>
+    <li>Жанры в таблице — ссылки на раздел «Жанры».</li>
+  </ul>
+  <p><a href="#table-top">↑ К началу</a> | <a href="#table-1">← К разделу 1</a></p>
+</section>
+
+<!-- ФОРМЫ -->
+<section class="page" id="forms" hidden>
+  <h2>Форма 1: Личные контактные данные</h2>
+  <form onsubmit="return false">
+    <p>Фамилия: <input type="text" value="Савельева"></p>
+    <p>Имя: <input type="text" value="Мария"></p>
+    <p>Группа: <input type="text" value="Б25ДЗ27"></p>
+    <p>Мобильный телефон: <input type="tel"></p>
+    <p>Электронная почта: <input type="email"></p>
+    <p>Дата отправки: <input type="date"></p>
+    <p><button type="submit">Отправить</button> <button type="reset">Очистить</button></p>
+  </form>
+
+  <h2>Форма 2: Покупка / отзыв об игре</h2>
+  <form onsubmit="return false">
+    <p>Ваше имя (text): <input type="text" value="Гость"></p>
+    <p>Количество часов в игре (number): <input type="number" value="4"></p>
+    <p>Сложность игры (radio):
+      <input type="radio" name="lvl" id="l1" checked><label for="l1">Лёгкая</label>
+      <input type="radio" name="lvl" id="l2"><label for="l2">Средняя</label>
+      <input type="radio" name="lvl" id="l3"><label for="l3">Сложная</label>
+    </p>
+    <p>Платформы, которые есть (checkbox):
+      <input type="checkbox" id="p1" checked><label for="p1">PC</label>
+      <input type="checkbox" id="p2"><label for="p2">PlayStation</label>
+      <input type="checkbox" id="p3" checked><label for="p3">Xbox</label>
+    </p>
+    <p>Дата покупки (date): <input type="date" value="2026-10-14"></p>
+    <p>Пароль для подтверждения (password): <input type="password" value="1234567"></p>
+    <p>Комментарий / пожелания:<br>
+      <textarea rows="3" cols="40">Хочу попробовать новую RPG!</textarea></p>
+    <p><button type="submit">Отправить</button> <button type="reset">Очистить</button></p>
+  </form>
+</section>
+
+<!-- DOM_JS -->
+<section class="page" id="dom" hidden>
+  <h2>DOM_JS. Считываем информацию из DOM</h2>
+  <p id="d-passport">Серия 4500 № 123456</p>
+  <p>Фамилия: <span id="d-surname">Савельева</span></p>
+  <p>Имя: <span id="d-name">Мария</span></p>
+  <p>Отчество: <span id="d-patr">Александровна</span></p>
+  <p>Пол: жен. Дата рождения: <span id="d-birth">12.07.2007</span></p>
+  <p>Место рождения: г. Москва</p>
+  <p>Выдан: 15.08.2018 ОВД Тверского района г. Москвы</p>
+</section>
+
+<!-- КИРИЛЛИЦА -> ЛАТИНИЦА -->
+<section class="page" id="translit" hidden>
+  <h2>Изменяем кириллицу на латиницу по клику</h2>
+  <p>Кликните кнопку — фамилия, имя и год изменятся на латинские символы.</p>
+  <p>Серия 4500 № 123456</p>
+  <p>Фамилия: <span id="t-surname">Савельева</span></p>
+  <p>Имя: <span id="t-name">Мария</span></p>
+  <p>Отчество: Александровна</p>
+  <p>Пол: жен. Дата рождения: 12.07.<span id="t-year">2007</span></p>
+  <p>Место рождения: г. Москва</p>
+  <p>Выдан: 15.08.2018 ОВД Тверского района г. Москвы</p>
+  <button id="toLat">Изменить на латиницу</button>
+  <button id="toCyr">Вернуть кириллицу</button>
+</section>
+
+<!-- АЛГОРИТМИЧЕСКАЯ ЗАДАЧА -->
+<section class="page" id="task" hidden>
+  <h2>Решение алгоритмической задачи</h2>
+  <p>Определить значение функции Z = 1/(XY) при произвольных X и Y.</p>
+  <p>X: <input type="text" id="x"> Y: <input type="text" id="y">
+     <button id="calc">Вычислить</button></p>
+  <p id="result"></p>
+</section>
+
+<script>
+  // --- Переключение разделов по якорю ---
+  function route() {
+    var h = location.hash.slice(1) || "home";
+    var el = document.getElementById(h);
+    if (!el) { h = "home"; el = document.getElementById("home"); }
+    var page = el.closest(".page");
+    document.querySelectorAll(".page").forEach(function (p) { p.hidden = (p !== page); });
+    var links = Array.prototype.slice.call(document.querySelectorAll("#menu a"));
+    var target = links.some(function (a) { return a.getAttribute("href") === "#" + h; }) ? h : page.id;
+    links.forEach(function (a) {
+      a.classList.toggle("active", a.getAttribute("href") === "#" + target);
+    });
+    if (el !== page) el.scrollIntoView(); else window.scrollTo(0, 0);
+  }
+  window.addEventListener("hashchange", route);
+  route();
+
+  // --- DOM_JS: считываем данные из DOM ---
+  var passport = {
+    surname: document.getElementById("d-surname").textContent,
+    name: document.getElementById("d-name").textContent,
+    patronymic: document.getElementById("d-patr").textContent,
+    birth: document.getElementById("d-birth").textContent
+  };
+  console.log("Данные, считанные из DOM:", passport);
+
+  // --- Кириллица -> латиница ---
+  var map = {а:"a",б:"b",в:"v",г:"g",д:"d",е:"e",ё:"e",ж:"zh",з:"z",и:"i",й:"y",к:"k",л:"l",м:"m",
+    н:"n",о:"o",п:"p",р:"r",с:"s",т:"t",у:"u",ф:"f",х:"kh",ц:"ts",ч:"ch",ш:"sh",щ:"shch",ъ:"",
+    ы:"y",ь:"",э:"e",ю:"yu",я:"ya"};
+  function translit(s) {
+    return s.split("").map(function (c) {
+      var l = c.toLowerCase(), r = map[l];
+      if (r === undefined) return c;
+      return c === l ? r : r.charAt(0).toUpperCase() + r.slice(1);
+    }).join("");
+  }
+  function roman(n) {
+    var v = [1000,900,500,400,100,90,50,40,10,9,5,4,1],
+        s = ["M","CM","D","CD","C","XC","L","XL","X","IX","V","IV","I"], r = "";
+    for (var i = 0; i < v.length; i++) while (n >= v[i]) { r += s[i]; n -= v[i]; }
+    return r;
+  }
+  var ids = ["t-surname", "t-name", "t-year"];
+  var orig = ids.map(function (i) { return document.getElementById(i).textContent; });
+  document.getElementById("toLat").onclick = function () {
+    document.getElementById("t-surname").textContent = translit(orig[0]);
+    document.getElementById("t-name").textContent = translit(orig[1]);
+    document.getElementById("t-year").textContent = roman(parseInt(orig[2], 10));
+  };
+  document.getElementById("toCyr").onclick = function () {
+    ids.forEach(function (id, i) { document.getElementById(id).textContent = orig[i]; });
+  };
+
+  // --- Задача: Z = 1 / (X * Y) ---
+  document.getElementById("calc").onclick = function () {
+    var x = parseFloat(document.getElementById("x").value.replace(",", "."));
+    var y = parseFloat(document.getElementById("y").value.replace(",", "."));
+    var out = document.getElementById("result");
+    if (isNaN(x) || isNaN(y)) out.textContent = "Введите числа в оба поля.";
+    else if (x * y === 0) out.textContent = "Функция не определена: деление на ноль (X·Y = 0).";
+    else out.textContent = "Z = 1/(" + x + "·" + y + ") = " + (1 / (x * y));
+  };
+</script>
+</body>
+</html>
